@@ -1,0 +1,110 @@
+
+.section {
+    display: grid;
+    margin: var(--mb-7) 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--mb-6) var(--mb-4);
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card__image {
+    border-radius: var(--smaller-radius);
+}
+
+.card__image, 
+.section__title {
+    margin-bottom: var(--mb-4);
+}
+
+.card__image img {
+    width: 100%;
+    border-radius: var(--smaller-radius);
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.card__author {
+    font-size: var(--smaller-font-size);
+    color: var(--secondary-subtitle-color); 
+}
+
+/* CARDS PAGE RECEITA */
+.section__receitas {
+    margin: 0 0;
+}
+
+/* === MODAL === */
+
+.section__modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.section__modal--active {
+    display: block;
+    display: grid;
+    place-items: center;
+    z-index: var(--z-tooltip);
+}
+
+.modal__container {
+    max-width: 660px;
+    background-color: var(--background);
+    padding: var(--mb-6);
+    border-radius: var(--smaller-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__card__image img {
+    border-radius: var(--smaller-radius);
+}
+
+.modal__card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__card__title {
+    font-size: var(--h2-font-size);
+    margin: 20px 0 5px 0;
+}
+
+.modal__card__author {
+    font-size: var(--h3-font-size);
+    margin-bottom: 60px;
+    color: var(--secondary-subtitle-color);
+}
+
+.modal__close {
+    color: var(--primary-subtitle-color);
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+
+.banner {
+    background-color: var(--primary-color);
+    border-radius: var(--big-radius);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.banner__content {
+    max-width: 316px;
+}
+
+.banner__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-2);
+    font-weight: bold;
+}
+.banner__subtitle {
+    font-size: var(--h3-font-size);
+    color: #000000;
+}
+
+.banner__image {
+    margin-top: 66px;
+}

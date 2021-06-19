@@ -1,0 +1,15 @@
+.footer {
+    width: 100vw;
+    padding: 23px;
+    background-color: var(--secondary-background);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: var(--z-normal);
+}
+
+.footer__content {
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--primary-subtitle-color);
+}
